@@ -67,6 +67,7 @@ For python3 main_2.py:
 
     The command cat movie_urls.txt | wc -l shows that there are approximately 4048 films.
     The total runtime required to download all the movie lyrics is approximately 11+ hours.
+    (4048 * 10 ) / (60 * 60) = 11.24 hr
 
 
 -------------------------
