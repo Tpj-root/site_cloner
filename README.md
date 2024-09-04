@@ -88,6 +88,7 @@ For Future Days:
     2. Retrieve Lyrics:
         Write SQL queries to get the lyrics based on specific criteria.
         
-        
+    3. Play the song in VLC Player; the lyrics will be displayed on the screen. 
+    (Note: I have an idea; implementation details are planned for later.)
 -------------------------
 
