@@ -58,8 +58,10 @@ Time Required for Runtime
 
 For python3 main_1.py:
 
-    The code processes 270 pages per URL request, and each request takes 10 seconds.
-    Therefore, the total runtime required is approximately 45 minutes.
+    The code processes 270 pages per URL request, and each request takes 10 seconds. 
+    Therefore, the total runtime required is approximately 45 minutes. 
+    The code has already been run to collect all the film URLs in movie_urls.txt.
+    
 
 For python3 main_2.py:
 
