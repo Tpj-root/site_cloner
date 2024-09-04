@@ -73,7 +73,21 @@ For python3 main_2.py:
 -------------------------
 
 
+To-Do:
+For Future Days:
 
+    1. Planning for Data Management:
+        Create a MySQL database to store all data.
+        Design and implement the following tables:
+            movies_name_list
+            music_directors_list
+            singers_list
+            songs_list
+            lyrics_json
 
-
+    2. Retrieve Lyrics:
+        Write SQL queries to get the lyrics based on specific criteria.
+        
+        
+-------------------------
 
