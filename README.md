@@ -2,6 +2,19 @@ Disclaimer:
 
 This project is intended solely for educational purposes. The materials, code, and information provided within this project are designed to help individuals learn and understand various technical concepts and should not be used in a production environment without further modification and testing.
 
+
+--------------------
+
+Site: https://www.tamil2lyrics.com
+
+This Git repository downloads all Tamil film lyrics. 
+The lyrics are downloaded into folders named after each movie, and the song lyrics are saved in HTML format.
+
+--------------------
+
+
+
+
 --------------------
 How to Use This Code
 --------------------
