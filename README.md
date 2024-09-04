@@ -30,7 +30,7 @@ Step 2: Clone My GitHub Repository
 Clone the repository to your local machine using the following command:
 
 ```
-git clone "https://github.com/Tpj-root/site_cloner"
+git clone "https://github.com/Tpj-root/site_cloner.git"
 ```
 
 Step 3: Install the Required Dependencies
