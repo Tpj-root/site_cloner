@@ -41,9 +41,16 @@ pip install -r requirements.txt
 ```
 
 Step 4: Run the Code
-Finally, run the code with the following command:
+
 ```
 python3 main_2.py
+```
+
+
+Step 5: Run the Code lyrics to txt
+
+```
+bash lyrics_html_to_txt.sh
 ```
 
 -------------------------
@@ -70,7 +77,32 @@ For python3 main_2.py:
     (4048 * 10 ) / (60 * 60) = 11.24 hr
 
 
+
+For python3 html_to_txt.py
+
+    Usage: python3 html_to_txt.py <inputfile.html> <output.txt>
+
+    Function: Reads the HTML content from input_file, parses it with BeautifulSoup,
+    extracts the plain text, and writes it to output_file.
+
+    Note:need some data cleaning
+
+
+For bash lyrics_html_to_txt.sh
+
+    The Bash script:
+
+    - Finds the movies_sample folder.
+    - Recursively reads the movie names.
+    - Then reads the names of the HTML lyric files.
+    - Finds each HTML file and automatically runs the Python script to convert <filename.html> into <filename.html.txt>.
+
+
 -------------------------
+
+
+
+
 
 
 To-Do:
