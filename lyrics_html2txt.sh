@@ -23,7 +23,7 @@ for folder in "$main_dir"/*/; do
       if [[ -f "$file" ]]; then
         # Get the file name (basename of the file)
         file_name=$(basename "$file")
-        python3 $(pwd)"/"html_to_txt.py ${file} ${file}.txt
+        python3 $(pwd)"/"html2txt.py ${file} ${file}.txt
         #echo "  File: $file_name"
       fi
     done
