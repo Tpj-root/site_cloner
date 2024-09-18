@@ -24,7 +24,11 @@ for folder in "$main_dir"/*/; do
         # Get the file name (basename of the file)
         file_name=$(basename "$file")
         python3 $(pwd)"/"html2txt.py ${file} ${file}.txt
+        # ignore script --> txt2txt
+        bash $(pwd)"/"ignore.sh ${file}.txt ${file}2.txt
         #echo "  File: $file_name"
+        # remove the old txt file
+        rm ${file}.txt
       fi
     done
   fi
