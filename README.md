@@ -85,8 +85,6 @@ For python3 html2txt.py
     Function: Reads the HTML content from input_file, parses it with BeautifulSoup,
     extracts the plain text, and writes it to output_file.
 
-    Note:need some data cleaning
-
 
 For bash lyrics_html2txt.sh
 
@@ -97,6 +95,9 @@ For bash lyrics_html2txt.sh
     - Then reads the names of the HTML lyric files.
     - Finds each HTML file and automatically runs the Python script to convert <filename.html> into <filename.html.txt>.
 
+
+For bash ignore.sh <inputfile.txt> <outputfile.txt>
+    - added some data cleaning bash script
 
 -------------------------
 
