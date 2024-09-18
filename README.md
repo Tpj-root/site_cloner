@@ -50,7 +50,7 @@ python3 main_2.py
 Step 5: Run the Code lyrics to txt
 
 ```
-bash lyrics_html_to_txt.sh
+bash lyrics_html2txt.sh
 ```
 
 -------------------------
@@ -78,17 +78,17 @@ For python3 main_2.py:
 
 
 
-For python3 html_to_txt.py
+For python3 html2txt.py
 
-    Usage: python3 html_to_txt.py <inputfile.html> <output.txt>
-
+    Usage: python3 html2txt.py <inputfile.html> <outputfile.txt>
+    
     Function: Reads the HTML content from input_file, parses it with BeautifulSoup,
     extracts the plain text, and writes it to output_file.
 
     Note:need some data cleaning
 
 
-For bash lyrics_html_to_txt.sh
+For bash lyrics_html2txt.sh
 
     The Bash script:
 
