@@ -8,6 +8,7 @@ This project is intended solely for educational purposes. The materials, code, a
 Site: https://www.tamil2lyrics.com
 
 This Git repository downloads all Tamil film lyrics. 
+
 The lyrics are downloaded into folders named after each movie, and the song lyrics are saved in HTML format.
 
 --------------------
@@ -16,9 +17,12 @@ The lyrics are downloaded into folders named after each movie, and the song lyri
 
 
 --------------------
+
 How to Use This Code
+
 --------------------
 Step 1: Set Up a Python Virtual Environment
+
 Before running the code, it's a good practice to create a virtual environment. This isolates your project and ensures that dependencies do not conflict with other projects.
 
 ```
@@ -27,6 +31,7 @@ source mysite/bin/activate
 ```
 
 Step 2: Clone My GitHub Repository
+
 Clone the repository to your local machine using the following command:
 
 ```
@@ -34,6 +39,7 @@ git clone "https://github.com/Tpj-root/site_cloner.git"
 ```
 
 Step 3: Install the Required Dependencies
+
 Navigate to the project directory and install the required dependencies:
 
 ```
