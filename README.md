@@ -268,7 +268,7 @@ sudo chmod 644 /home/cnc/Desktop/GIT_MAIN/temp/1/movie_details.csv
 
 **`pretty view`**
 
-![pretty view](sql.png)
+![pretty view](sql1.png)
 
 # To view the search query
 
