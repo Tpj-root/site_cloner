@@ -109,7 +109,175 @@ For bash ignore.sh <inputfile.txt> <outputfile.txt>
 -------------------------
 
 
+# MySQL
 
+mysql is a relational database management system (RDBMS) that is primarily used to store, manage, and query data.
+
+## Install
+
+```
+sudo apt install default-mysql-server
+```
+
+## run
+```
+sudo mysql
+```
+
+-- Step 1: Create the database
+```
+CREATE DATABASE Movie_lyrics;
+```
+
+
+-- Step 2: Use the database
+```
+USE Movie_lyrics;
+```
+
+-- Step 3: Create the movies table
+
+```
+CREATE TABLE movies (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(255) NOT NULL,
+    release_year YEAR NOT NULL DEFAULT 2024, -- Default release year
+    songs_count INT DEFAULT 0,               -- Default song count
+    music_director VARCHAR(255) DEFAULT 'Unknown',  -- Default music director
+    producer VARCHAR(255) DEFAULT 'Unknown',        -- Default producer
+    production VARCHAR(255) DEFAULT 'Unknown',      -- Default production house
+    director VARCHAR(255) DEFAULT 'Unknown',        -- Default director
+    music_by VARCHAR(255) DEFAULT 'Unknown',        -- Default for music_by
+    release_date DATE DEFAULT '2024-01-01',         -- Default release date
+    country VARCHAR(100) DEFAULT 'India',           -- Default country
+    language VARCHAR(100) DEFAULT 'Tamil',          -- Default language
+    film_url VARCHAR(255) DEFAULT 'https://www.example.com' -- Default URL
+);
+```
+
+If you insert data without specifying these values, the default ones will be used:
+
+```
+INSERT INTO movies (name)
+VALUES ('Anbarasin Kadhal');
+```
+
+
+
+-- Step 4: Create the songs table
+
+```
+CREATE TABLE songs (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    movie_id INT,
+    title VARCHAR(255) NOT NULL,
+    lyrics TEXT,
+    singer VARCHAR(255),
+    FOREIGN KEY (movie_id) REFERENCES movies(id)
+);
+```
+
+----  view list all tables
+
+```
+SHOW TABLES;
+```
+
+
+
+Example: Updating a Movie's Details
+
+If you want to update the songs_count and producer for a specific movie later:
+
+```
+UPDATE movies
+SET songs_count = 7, producer = 'New Producer'
+WHERE name = 'Anbarasin Kadhal';
+```
+
+
+Example: Updating the URL for a Movie
+
+If you want to update the film_url later:
+
+```
+UPDATE movies
+SET film_url = 'https://www.tamil2lyrics.com/movies/100/'
+WHERE name = 'Anbarasin Kadhal';
+```
+
+
+
+## If you want to delete the movies table, use the following command:
+
+```
+DROP TABLE movies;
+```
+
+
+
+
+## Benefits of Default Values for Future Updates:
+
+    Convenience: You can insert incomplete data initially and update it later when you have more information.
+    
+    Consistency: Default values help ensure that there are no NULL or missing values, making your database more consistent and predictable.
+
+
+## filename : movie_details.csv
+```
+https://www.tamil2lyrics.com/movies/10-enradhukulla/,10 Enradhukulla,2015
+https://www.tamil2lyrics.com/movies/100/,100,2019
+https://www.tamil2lyrics.com/movies/100-kadhal/,100% Kadhal,2018
+https://www.tamil2lyrics.com/movies/12th-fail/,12 TH Fail,2023
+.
+'
+https://www.tamil2lyrics.com/movies/123/,123,2002
+https://www.tamil2lyrics.com/movies/12b/,12B,2001
+
+```
+
+## This data is comma-separated (CSV format). 
+
+## Each line contains the following details separated by commas:
+
+    Movie URL (e.g., https://www.tamil2lyrics.com/movies/10-enradhukulla/)
+    Movie Name (e.g., 10 Enradhukulla)
+    Release Year (e.g., 2015)
+
+
+
+# Load CSV into MySQL
+```
+LOAD DATA INFILE '/var/lib/mysql-files/movie_details.csv'
+INTO TABLE movies
+FIELDS TERMINATED BY ',' 
+ENCLOSED BY '"'
+LINES TERMINATED BY '\n'
+(film_url, name, release_year);
+```
+sss
+
+
+
+Bug: ERROR 13 (HY000): Can't get stat of '/../file.csv' (Errcode: 13 "Permission denied")
+```
+sudo chmod 644 /home/cnc/Desktop/GIT_MAIN/temp/1/movie_details.csv
+```
+
+
+# To view stored data in a pretty
+
+**`pretty view`**
+
+![pretty view](sql.png)
+
+# To view the search query
+
+
+**`search query`**
+
+![search query](sql2.png)
 
 
 
@@ -117,13 +285,13 @@ To-Do:
 For Future Days:
 
     1. Planning for Data Management:
-        Create a MySQL database to store all data.
-        Design and implement the following tables:
-            movies_name_list
-            music_directors_list
-            singers_list
-            songs_list
-            lyrics_json
+        - [x] Create a MySQL database to store all data.
+        - [x] Design and implement the following tables:
+        - [x] movies_name_list
+        - [ ] music_directors_list
+        - [ ] singers_list
+        - [ ] songs_list
+        - [ ] lyrics_json
 
     2. Retrieve Lyrics:
         Write SQL queries to get the lyrics based on specific criteria.
