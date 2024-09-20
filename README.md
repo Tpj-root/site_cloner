@@ -256,8 +256,6 @@ ENCLOSED BY '"'
 LINES TERMINATED BY '\n'
 (film_url, name, release_year);
 ```
-sss
-
 
 
 Bug: ERROR 13 (HY000): Can't get stat of '/../file.csv' (Errcode: 13 "Permission denied")
