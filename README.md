@@ -11,6 +11,17 @@ This Git repository downloads all Tamil film lyrics.
 
 The lyrics are downloaded into folders named after each movie, and the song lyrics are saved in HTML format.
 
+
+
+
+## Update_info
+
+| DATE | Films_counts |  Page_counts (lastpage_films) | Site_lyrics_counts |  Update or not  | archive_files |
+| --- |  --- | :---: | :---: | :---: |  :---: |
+| 1 October 2024 | 4048 |271 (11) | 18128 song lyrics   | [✓]  | <table border="0"><tr><td><a href="archive/movies_Lyrics_archive.zip" target="_blank">movies_Lyrics_archive.zip</a></td></tr><tr><td><a href="archive/movies_Lyrics_archive.z01" target="_blank">movies_Lyrics_archive.z01</a></td></tr><tr><td><a href="archive/movies_Lyrics_archive.z02" target="_blank">movies_Lyrics_archive.z02</a></td></tr><tr><td><a href="archive/movies_Lyrics_archive_index.txt" target="_blank">movies_Lyrics_archive_index</a></td></tr></table> |
+| 14 October 2024 | 4093 |273 (13) | 18365 song lyrics  | [✓]  | not yet |
+
+
 --------------------
 
 
