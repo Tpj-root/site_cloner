@@ -127,7 +127,7 @@ unzip movies_Lyrics_archive.zip
 
 
 
-Try Repairing the ZIP File: Some ZIP tools can attempt to repair the archive
+Try Repairing the ZIP File:
 
 
 ```
