@@ -106,6 +106,19 @@ For bash ignore.sh <inputfile.txt> <outputfile.txt>
 
     - added some data cleaning bash script
 
+
+
+
+For unzip tool will automatically handle the split files and extract the content
+
+    - Ensure all the parts (.zip, .z01, .z02, etc.) are in the same directory before running the command.
+```
+unzip movies_Lyrics_archive.zip
+
+
+```
+
+
 -------------------------
 
 
